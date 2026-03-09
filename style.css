@@ -1,0 +1,122 @@
+/* Style général */
+
+body{
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+text-align:center;
+color:white;
+
+/* fond dégradé animé */
+background: linear-gradient(135deg,#d7a7d9,#9b59b6,#6c5ce7);
+background-size:400% 400%;
+animation: gradientMove 12s ease infinite;
+}
+
+/* animation fond */
+
+@keyframes gradientMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* titre principal */
+
+.titre-site{
+
+margin-top:40px;
+font-size:40px;
+letter-spacing:2px;
+text-shadow:0 4px 10px rgba(0,0,0,0.3);
+
+}
+
+/* boîte du sommaire */
+
+.sommaire{
+
+width:350px;
+margin:50px auto;
+padding:30px;
+
+border-radius:20px;
+
+/* effet verre */
+
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+/* titre sommaire */
+
+.sommaire h2{
+
+margin-bottom:25px;
+font-size:28px;
+
+}
+
+/* liste */
+
+ul{
+
+list-style:none;
+padding:0;
+
+}
+
+li{
+
+margin:15px 0;
+
+}
+
+/* boutons */
+
+a{
+
+display:block;
+
+padding:14px;
+
+text-decoration:none;
+
+color:white;
+font-weight:bold;
+
+border-radius:30px;
+
+background: linear-gradient(45deg,#ff6ec4,#7873f5);
+
+transition: all 0.3s ease;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+/* animation hover */
+
+a:hover{
+
+transform: scale(1.08);
+
+background: linear-gradient(45deg,#ff9a9e,#fad0c4);
+
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+
+}
+
+/* pied de page */
+
+footer{
+
+margin-top:60px;
+font-size:14px;
+opacity:0.8;
+
+}
